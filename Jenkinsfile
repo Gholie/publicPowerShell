@@ -4,7 +4,8 @@ pipeline {
     stage('Run tests') {
       steps {
         echo 'Runnings tests...'
-        sh './test/runtests.sh'
+        sh '''find . -type d
+#./test/runtests.sh'''
       }
     }
 
